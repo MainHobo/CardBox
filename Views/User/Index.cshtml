@@ -1,0 +1,16 @@
+﻿@model IEnumerable<CardBoxWeb.Models.User>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Users</h1>
+
+<div>
+    @foreach (var obj in Model)
+    {
+        <p>
+            @obj.Username
+            <break/>
+        </p>
+    }
+</div>
